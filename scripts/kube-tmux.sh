@@ -156,7 +156,7 @@ _kube_tmux_get_context_ns() {
     KUBE_TMUX_NAMESPACE=$(echo "${context_ns}" | cut -d ' ' -f 2)
 
     KUBE_TMUX_CONTEXT="${KUBE_TMUX_CONTEXT:-N/A}"
-    KUBE_TMUX_NAMESPACE="${KUBE_TMUX_NAMESPACE:-N/A}"
+    KUBE_TMUX_NAMESPACE="${KUBE_TMUX_NAMESPACE:-default}"
 
     # Apply context function if enabled
     if [[ "${KUBE_TMUX_CONTEXT_ENABLE}" == true ]]; then
